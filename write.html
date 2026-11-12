@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write a Post - Daily Pulse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="logo">Daily<span>Pulse</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="trending.html">Trending</a>
+      <a href="write.html">Write a Post</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <h1>Write a Post</h1>
+  <p>Your post is saved in your browser and appears on the home page.</p>
+  <form id="postForm">
+    <label for="title">Title</label>
+    <input type="text" id="title" placeholder="Enter a headline">
+    <label for="author">Your name</label>
+    <input type="text" id="author" placeholder="Enter your name">
+    <label for="category">Category</label>
+    <select id="category">
+      <option>Technology</option><option>Sports</option><option>Business</option>
+      <option>Health</option><option>Entertainment</option>
+    </select>
+    <label for="text">Article</label>
+    <textarea id="text" rows="8" placeholder="Write your article here..."></textarea>
+    <p id="msg"></p>
+    <button type="submit" class="btn main">Publish post</button>
+  </form>
+</div>
+<footer>&copy; <span id="year"></span> Daily Pulse | Made for MSE2 Practical 12</footer>
+<script src="script.js"></script>
+</body>
+</html>
